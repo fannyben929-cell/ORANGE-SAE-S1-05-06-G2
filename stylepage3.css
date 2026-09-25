@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 12px;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --txtaccent: #fff7f2;
+    --txtaccent1: #ffd0a5;
+    --textaccent2: #f7a35d;
+    --textaccent3: #3d240e;
+    --txtaccent4: #f97316;
+    --txtaccent5: #fff1e6;
+
+    --haccent: #f97316;
+    --haccent_withOpacity: rgba(249, 115, 22, 0.72);
+    --haccent2: #fffaf5;
+
+    --bgaccent: #1c110b;
+    --bgaccent_withOpacity: rgba(28, 17, 11, 0.96);
+}
+
+/* =========================
+   CONTENEUR
+   ========================= */
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+
+    animation-name: mom;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+/* =========================
+   SECTION PRINCIPALE
+   ========================= */
+
+#sec-0 {
+    background: linear-gradient(
+        rgba(248, 127, 15, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ), url("oo.jpg") no-repeat top center / cover;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.ana {
+    background-color: #1A1C27;
+
+    animation-name: spin;
+    animation-duration: 30s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+#sec-0 header:last-of-type {
+    position: relative;
+    display: flex;
+}
+
+#sec-0 header:last-of-type .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.65rem 0;
+    position: relative;
+}
+
+#sec-0 header:last-of-type h1 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--haccent);
+    animation-name: yassine;
+    animation-duration: 30s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+#sec-0 header:last-of-type h1 > span {
+    color: var(--txtaccent);
+}
+
+#sec-0 header:last-of-type h1 p {
+    font-size: 0.85rem;
+    font-style: normal;
+    color: var(--textaccent2);
+}
+
+#sec-0 header nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+    animation-name: khadija;
+    animation-duration: 30s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+#sec-0 header nav a:hover {
+    background-color: #73757E;
+    text-decoration: underline;
+    color: white;
+    border-radius: 20px;
+    border-top: 3px solid black;
+    border-bottom: 1px solid cyan;
+    transition: all 10s ease;
+}
+
+.me {
+    display: flex;
+    flex-direction: row;
+
+    animation-name: mom;
+    animation-duration: 3s;
+}
+
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+#sec-7 {
+    background-color: var(--bgaccent);
+    padding: 20px 0 10px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+#sec-7 p {
+    color: var(--txtaccent5);
+}
+
+#sec-7 p span {
+    color: var(--haccent);
+}
+
+#page3 .footer {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    top: 100vh;
+}
+/* =========================
+   PAGE 3
+   ========================= */
+
+#page3 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    
+}
+
+/* Filtre transparent */
+
+#page3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+
+    background:
+        linear-gradient(rgba(45, 45, 45, 0.514), rgba(45, 45, 45, 0.514)),
+        url("images/arbre.jpg");
+
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+/* Contenu au-dessus du filtre */
+
+#page3 > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* =========================
+   CONTENU PAGE 3
+   ========================= */
+
+
+
+#page3 .content {
+    width: 1200px;
+    max-width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+#page3 .content h1 {
+    color: #f97316;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 1px;
+}
+
+#page3 .content h2 {
+    color: white;
+    font-size: 30px;
+    padding-left: 20px;
+    margin-top: 1px;
+    letter-spacing: 1px;
+}
+
